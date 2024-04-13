@@ -99,18 +99,73 @@ final class HomeViewController: UIViewController {
         contentTodayView.addSubview(contentTodayTitleLabel)
         contentTodayTitleLabel.snp.makeConstraints {
             $0.top.leading.equalToSuperview().inset(16)
-            $0.height.equalTo(40)
+            $0.height.equalTo(30)
         }
         
-        // 부연설명 라벨 추가
-        let contentTodayDescriptionLabel = UILabel()
-        contentTodayDescriptionLabel.text = "2024-04-13"
-        contentTodayDescriptionLabel.font = UIFont.systemFont(ofSize: 12)
-        contentTodayView.addSubview(contentTodayDescriptionLabel)
-        contentTodayDescriptionLabel.snp.makeConstraints {
+        // 날짜 라벨 추가
+        let contentTodayDateLabel = UILabel()
+        contentTodayDateLabel.text = "2024-04-13"
+        contentTodayDateLabel.font = UIFont.systemFont(ofSize: 12)
+        contentTodayView.addSubview(contentTodayDateLabel)
+        contentTodayDateLabel.snp.makeConstraints {
             $0.leading.equalTo(contentTodayTitleLabel.snp.trailing).offset(5) // 제목 라벨 우측 여백 5
             $0.firstBaseline.equalTo(contentTodayTitleLabel)
             $0.bottom.equalTo(contentTodayTitleLabel.snp.bottom).offset(0) // 하단 여백 제목 라벨과 동일
+        }
+        
+        // 초대 링크
+        let inviteLinkLabel = UILabel().then {
+            $0.isUserInteractionEnabled = true
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(inviteLinkLabelTapped))
+            $0.addGestureRecognizer(tapGesture)
+        }
+        inviteLinkLabel.text = "초대 링크 복사"
+        inviteLinkLabel.font = UIFont.systemFont(ofSize: 12)
+        contentTodayView.addSubview(inviteLinkLabel)
+        inviteLinkLabel.snp.makeConstraints {
+            $0.top.right.equalToSuperview().inset(16)
+        }
+        
+        // 참여자 라벨 추가
+        let contentTodayMemberLabel = UILabel()
+        contentTodayMemberLabel.text = "참여자"
+        contentTodayMemberLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        contentTodayView.addSubview(contentTodayMemberLabel)
+        contentTodayMemberLabel.snp.makeConstraints {
+            $0.top.equalTo(contentTodayTitleLabel.snp.bottom).offset(5) // 제목 라벨 아래로 5만큼 내림
+            $0.leading.equalTo(contentTodayTitleLabel) // 제목 라벨과 왼쪽 정렬
+        }
+        
+        // 참여자 값 추가
+        let contentTodayMemberValue = UILabel()
+        contentTodayMemberValue.text = "| 생성자 외 4명"
+        contentTodayMemberValue.font = UIFont.systemFont(ofSize: 15)
+        contentTodayView.addSubview(contentTodayMemberValue)
+        contentTodayMemberValue.snp.makeConstraints {
+            $0.top.equalTo(contentTodayMemberLabel.snp.bottom).offset(5) // 제목 라벨 아래로 5만큼 내림
+            $0.leading.equalTo(contentTodayMemberLabel) // 제목 라벨과 왼쪽 정렬
+        }
+        
+        // 장소 라벨 추가
+        let contentTodayLocationLabel = UILabel()
+        contentTodayLocationLabel.text = "장소"
+        contentTodayLocationLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        contentTodayView.addSubview(contentTodayLocationLabel)
+        contentTodayLocationLabel.snp.makeConstraints {
+            $0.top.equalTo(contentTodayTitleLabel.snp.bottom).offset(5) // 제목 라벨 아래로 5만큼 내림
+            $0.leading.equalTo(contentTodayView.snp.centerX)
+            $0.bottom.equalTo(contentTodayMemberLabel.snp.bottom).offset(0) // 하단 여백 제목 라벨과 동일
+        }
+        
+        // 장소 값 추가
+        let contentTodayLocationValue = UILabel()
+        contentTodayLocationValue.text = "| 서울특별시 강남구 뭐시기 저시기 어쩌구 저쩌구"
+        contentTodayLocationValue.font = UIFont.systemFont(ofSize: 15)
+        contentTodayView.addSubview(contentTodayLocationValue)
+        contentTodayLocationValue.snp.makeConstraints {
+            $0.top.equalTo(contentTodayLocationLabel.snp.bottom).offset(5) // 제목 라벨 아래로 5만큼 내림
+            $0.leading.equalTo(contentTodayLocationLabel) // 제목 라벨과 왼쪽 정렬
+            $0.right.equalToSuperview().inset(16)
         }
         
         // 정산 금액 라벨 추가
@@ -119,21 +174,10 @@ final class HomeViewController: UIViewController {
         contentTodayBudgetLabel.font = UIFont.systemFont(ofSize: 15)
         contentTodayView.addSubview(contentTodayBudgetLabel)
         contentTodayBudgetLabel.snp.makeConstraints {
-            $0.top.equalTo(contentTodayTitleLabel.snp.bottom).offset(5) // 제목 라벨 아래로 5만큼 내림
+            $0.top.equalTo(contentTodayMemberValue.snp.bottom).offset(5) // 참여자 값 아래로 5만큼 내림
             $0.leading.equalTo(contentTodayTitleLabel) // 제목 라벨과 왼쪽 정렬
-            $0.height.equalTo(20) // 높이 20
             $0.bottom.equalToSuperview().inset(16)
-        }
-        
-        // 모임 인원 수 추가
-        let contentTodayUserLabel = UILabel()
-        contentTodayUserLabel.text = "생성자 외 4명"
-        contentTodayUserLabel.font = UIFont.systemFont(ofSize: 12)
-        contentTodayView.addSubview(contentTodayUserLabel)
-        contentTodayUserLabel.snp.makeConstraints {
-            $0.right.equalToSuperview().inset(16)
-            $0.firstBaseline.equalTo(contentTodayBudgetLabel)
-            $0.bottom.equalTo(contentTodayBudgetLabel.snp.bottom).offset(0) // 하단 여백 제목 라벨과 동일
+            $0.height.equalTo(20)
         }
         
         // 구분선
@@ -156,4 +200,7 @@ final class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
+    @objc func inviteLinkLabelTapped() {
+        print("초대 링크 복사 탭")
+    }
 }
