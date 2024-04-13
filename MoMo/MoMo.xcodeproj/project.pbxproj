@@ -16,10 +16,29 @@
 		0DC96F992BCA513F0007C2EE /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F982BCA513F0007C2EE /* Then */; };
 		0DC96F9C2BCA51B70007C2EE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F9B2BCA51B70007C2EE /* CombineMoya */; };
 		0DC96F9E2BCA51B70007C2EE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F9D2BCA51B70007C2EE /* Moya */; };
-		0DC96FA02BCA530B0007C2EE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96F9F2BCA530B0007C2EE /* Network.swift */; };
-		0DC96FA22BCA53880007C2EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA12BCA53880007C2EE /* Request.swift */; };
 		0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */; };
 		0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA72BCA5CF60007C2EE /* MainTab.swift */; };
+		0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */; };
+		0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB12BCA67610007C2EE /* UIButton+.swift */; };
+		0DC96FB52BCA691B0007C2EE /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB42BCA691B0007C2EE /* RootController.swift */; };
+		0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */; };
+		0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */; };
+		0DC96FBB2BCA69DA0007C2EE /* LocalStorage+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */; };
+		0DC96FBE2BCA6A8E0007C2EE /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBD2BCA6A8E0007C2EE /* String+.swift */; };
+		0DC96FC02BCA6C140007C2EE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */; };
+		0DC96FC22BCA6D5F0007C2EE /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */; };
+		0DC96FC42BCA6D6A0007C2EE /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */; };
+		0DC96FC72BCA6FBF0007C2EE /* EditMoimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FC62BCA6FBF0007C2EE /* EditMoimViewController.swift */; };
+		0DC96FD82BCA79240007C2EE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FCB2BCA79240007C2EE /* NetworkError.swift */; };
+		0DC96FD92BCA79240007C2EE /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FCC2BCA79240007C2EE /* NetworkProtocol.swift */; };
+		0DC96FDA2BCA79240007C2EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FCD2BCA79240007C2EE /* Request.swift */; };
+		0DC96FDB2BCA79240007C2EE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FCE2BCA79240007C2EE /* Response.swift */; };
+		0DC96FDC2BCA79240007C2EE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DC96FD12BCA79240007C2EE /* loading.json */; };
+		0DC96FDD2BCA79240007C2EE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */; };
+		0DC96FDE2BCA79240007C2EE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FD42BCA79240007C2EE /* Network.swift */; };
+		0DC96FE52BCA7A1E0007C2EE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96FE42BCA7A1E0007C2EE /* Lottie */; };
+		0DC96FEA2BCA7ADD0007C2EE /* EnterNicknameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */; };
+		0DC96FEC2BCA803C0007C2EE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +49,28 @@
 		0DC96F7E2BCA37E80007C2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DC96F802BCA37E80007C2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC96F902BCA3F460007C2EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0DC96F9F2BCA530B0007C2EE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		0DC96FA12BCA53880007C2EE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0DC96FA72BCA5CF60007C2EE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameViewController.swift; sourceTree = "<group>"; };
+		0DC96FB12BCA67610007C2EE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		0DC96FB42BCA691B0007C2EE /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Database.swift"; sourceTree = "<group>"; };
+		0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+Key.swift"; sourceTree = "<group>"; };
+		0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+Database.swift"; sourceTree = "<group>"; };
+		0DC96FBD2BCA6A8E0007C2EE /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
+		0DC96FC62BCA6FBF0007C2EE /* EditMoimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMoimViewController.swift; sourceTree = "<group>"; };
+		0DC96FCB2BCA79240007C2EE /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		0DC96FCC2BCA79240007C2EE /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		0DC96FCD2BCA79240007C2EE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		0DC96FCE2BCA79240007C2EE /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		0DC96FD12BCA79240007C2EE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		0DC96FD42BCA79240007C2EE /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameRequest.swift; sourceTree = "<group>"; };
+		0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC96FE52BCA7A1E0007C2EE /* Lottie in Frameworks */,
 				0DC96F962BCA51320007C2EE /* SnapKit in Frameworks */,
 				0DC96F992BCA513F0007C2EE /* Then in Frameworks */,
 				0DC96F9E2BCA51B70007C2EE /* Moya in Frameworks */,
@@ -80,8 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				0DC96F922BCA41410007C2EE /* App */,
-				0DC96F8A2BCA3F040007C2EE /* Network */,
+				0DC96F8A2BCA3F040007C2EE /* Core */,
 				0DC96F892BCA3EFE0007C2EE /* Scene */,
+				0DC96FB02BCA675A0007C2EE /* Util */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -99,20 +138,22 @@
 		0DC96F892BCA3EFE0007C2EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0DC96FC52BCA6F9D0007C2EE /* EditMoim */,
+				0DC96FB32BCA69130007C2EE /* Root */,
+				0DC96FAD2BCA64140007C2EE /* Nickname */,
 				0DC96FA42BCA58280007C2EE /* Tab */,
 				0DC96F8F2BCA3F1E0007C2EE /* Home */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		0DC96F8A2BCA3F040007C2EE /* Network */ = {
+		0DC96F8A2BCA3F040007C2EE /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0DC96FA32BCA54680007C2EE /* Core */,
-				0DC96F9F2BCA530B0007C2EE /* Network.swift */,
-				0DC96FA12BCA53880007C2EE /* Request.swift */,
+				0DC96FD62BCA79240007C2EE /* Network */,
+				0DC96FD02BCA79240007C2EE /* NetworkProtocol */,
 			);
-			path = Network;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		0DC96F8F2BCA3F1E0007C2EE /* Home */ = {
@@ -132,13 +173,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		0DC96FA32BCA54680007C2EE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		0DC96FA42BCA58280007C2EE /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +180,92 @@
 				0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		0DC96FAD2BCA64140007C2EE /* Nickname */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */,
+				0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */,
+			);
+			path = Nickname;
+			sourceTree = "<group>";
+		};
+		0DC96FB02BCA675A0007C2EE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FE32BCA799F0007C2EE /* Foundation+ */,
+				0DC96FE22BCA79920007C2EE /* UIKit+ */,
+				0DC96FBC2BCA69E80007C2EE /* LocalStorage */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0DC96FB32BCA69130007C2EE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FB42BCA691B0007C2EE /* RootController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0DC96FBC2BCA69E80007C2EE /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */,
+				0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */,
+				0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		0DC96FC52BCA6F9D0007C2EE /* EditMoim */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FC62BCA6FBF0007C2EE /* EditMoimViewController.swift */,
+			);
+			path = EditMoim;
+			sourceTree = "<group>";
+		};
+		0DC96FD02BCA79240007C2EE /* NetworkProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FCB2BCA79240007C2EE /* NetworkError.swift */,
+				0DC96FCC2BCA79240007C2EE /* NetworkProtocol.swift */,
+				0DC96FCD2BCA79240007C2EE /* Request.swift */,
+				0DC96FCE2BCA79240007C2EE /* Response.swift */,
+			);
+			path = NetworkProtocol;
+			sourceTree = "<group>";
+		};
+		0DC96FD62BCA79240007C2EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FD12BCA79240007C2EE /* loading.json */,
+				0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */,
+				0DC96FD42BCA79240007C2EE /* Network.swift */,
+				0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0DC96FE22BCA79920007C2EE /* UIKit+ */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FB12BCA67610007C2EE /* UIButton+.swift */,
+				0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */,
+				0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */,
+				0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */,
+			);
+			path = "UIKit+";
+			sourceTree = "<group>";
+		};
+		0DC96FE32BCA799F0007C2EE /* Foundation+ */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FBD2BCA6A8E0007C2EE /* String+.swift */,
+			);
+			path = "Foundation+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +289,7 @@
 				0DC96F982BCA513F0007C2EE /* Then */,
 				0DC96F9B2BCA51B70007C2EE /* CombineMoya */,
 				0DC96F9D2BCA51B70007C2EE /* Moya */,
+				0DC96FE42BCA7A1E0007C2EE /* Lottie */,
 			);
 			productName = MoMo;
 			productReference = 0DC96F6F2BCA37E70007C2EE /* MoMo.app */;
@@ -202,6 +323,7 @@
 				0DC96F942BCA51320007C2EE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				0DC96F972BCA513F0007C2EE /* XCRemoteSwiftPackageReference "Then" */,
 				0DC96F9A2BCA51B70007C2EE /* XCRemoteSwiftPackageReference "Moya" */,
+				0DC96FDF2BCA79590007C2EE /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 0DC96F702BCA37E70007C2EE /* Products */;
 			projectDirPath = "";
@@ -219,6 +341,7 @@
 			files = (
 				0DC96F7C2BCA37E80007C2EE /* Assets.xcassets in Resources */,
 				0DC96F7F2BCA37E80007C2EE /* Base in Resources */,
+				0DC96FDC2BCA79240007C2EE /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,13 +352,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC96FA02BCA530B0007C2EE /* Network.swift in Sources */,
+				0DC96FEA2BCA7ADD0007C2EE /* EnterNicknameRequest.swift in Sources */,
+				0DC96FDD2BCA79240007C2EE /* LoadingIndicator.swift in Sources */,
 				0DC96F912BCA3F460007C2EE /* HomeViewController.swift in Sources */,
+				0DC96FDE2BCA79240007C2EE /* Network.swift in Sources */,
+				0DC96FBB2BCA69DA0007C2EE /* LocalStorage+Database.swift in Sources */,
+				0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */,
+				0DC96FC22BCA6D5F0007C2EE /* UIConstants.swift in Sources */,
+				0DC96FDA2BCA79240007C2EE /* Request.swift in Sources */,
 				0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */,
-				0DC96FA22BCA53880007C2EE /* Request.swift in Sources */,
+				0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */,
 				0DC96F732BCA37E70007C2EE /* AppDelegate.swift in Sources */,
+				0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */,
 				0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */,
 				0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */,
+				0DC96FEC2BCA803C0007C2EE /* BaseURL.swift in Sources */,
+				0DC96FD92BCA79240007C2EE /* NetworkProtocol.swift in Sources */,
+				0DC96FC02BCA6C140007C2EE /* UIImage+.swift in Sources */,
+				0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */,
+				0DC96FBE2BCA6A8E0007C2EE /* String+.swift in Sources */,
+				0DC96FB52BCA691B0007C2EE /* RootController.swift in Sources */,
+				0DC96FDB2BCA79240007C2EE /* Response.swift in Sources */,
+				0DC96FC72BCA6FBF0007C2EE /* EditMoimViewController.swift in Sources */,
+				0DC96FC42BCA6D6A0007C2EE /* UIWindow+.swift in Sources */,
+				0DC96FD82BCA79240007C2EE /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +530,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.woody.MoMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahlua.MoMo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -416,7 +556,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.woody.MoMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahlua.MoMo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,6 +612,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		0DC96FDF2BCA79590007C2EE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -494,6 +642,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DC96F9A2BCA51B70007C2EE /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		0DC96FE42BCA7A1E0007C2EE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DC96FDF2BCA79590007C2EE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
