@@ -20,6 +20,14 @@
 		0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA72BCA5CF60007C2EE /* MainTab.swift */; };
 		0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */; };
 		0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB12BCA67610007C2EE /* UIButton+.swift */; };
+		0DC96FB52BCA691B0007C2EE /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB42BCA691B0007C2EE /* RootController.swift */; };
+		0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */; };
+		0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */; };
+		0DC96FBB2BCA69DA0007C2EE /* LocalStorage+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */; };
+		0DC96FBE2BCA6A8E0007C2EE /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBD2BCA6A8E0007C2EE /* String+.swift */; };
+		0DC96FC02BCA6C140007C2EE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */; };
+		0DC96FC22BCA6D5F0007C2EE /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */; };
+		0DC96FC42BCA6D6A0007C2EE /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		0DC96FA72BCA5CF60007C2EE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameViewController.swift; sourceTree = "<group>"; };
 		0DC96FB12BCA67610007C2EE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		0DC96FB42BCA691B0007C2EE /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Database.swift"; sourceTree = "<group>"; };
+		0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+Key.swift"; sourceTree = "<group>"; };
+		0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+Database.swift"; sourceTree = "<group>"; };
+		0DC96FBD2BCA6A8E0007C2EE /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 		0DC96F892BCA3EFE0007C2EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0DC96FB32BCA69130007C2EE /* Root */,
 				0DC96FAD2BCA64140007C2EE /* Nickname */,
 				0DC96FA42BCA58280007C2EE /* Tab */,
 				0DC96F8F2BCA3F1E0007C2EE /* Home */,
@@ -151,9 +168,32 @@
 		0DC96FB02BCA675A0007C2EE /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0DC96FBC2BCA69E80007C2EE /* LocalStorage */,
 				0DC96FB12BCA67610007C2EE /* UIButton+.swift */,
+				0DC96FB62BCA698A0007C2EE /* UserDefaults+Database.swift */,
+				0DC96FBD2BCA6A8E0007C2EE /* String+.swift */,
+				0DC96FBF2BCA6C140007C2EE /* UIImage+.swift */,
+				0DC96FC12BCA6D5F0007C2EE /* UIConstants.swift */,
+				0DC96FC32BCA6D6A0007C2EE /* UIWindow+.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		0DC96FB32BCA69130007C2EE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FB42BCA691B0007C2EE /* RootController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0DC96FBC2BCA69E80007C2EE /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FBA2BCA69DA0007C2EE /* LocalStorage+Database.swift */,
+				0DC96FB82BCA69AC0007C2EE /* LocalStorage+Key.swift */,
+			);
+			path = LocalStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,12 +278,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC96F912BCA3F460007C2EE /* HomeViewController.swift in Sources */,
+				0DC96FBB2BCA69DA0007C2EE /* LocalStorage+Database.swift in Sources */,
 				0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */,
+				0DC96FC22BCA6D5F0007C2EE /* UIConstants.swift in Sources */,
 				0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */,
+				0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */,
 				0DC96F732BCA37E70007C2EE /* AppDelegate.swift in Sources */,
+				0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */,
 				0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */,
 				0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */,
+				0DC96FC02BCA6C140007C2EE /* UIImage+.swift in Sources */,
 				0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */,
+				0DC96FBE2BCA6A8E0007C2EE /* String+.swift in Sources */,
+				0DC96FB52BCA691B0007C2EE /* RootController.swift in Sources */,
+				0DC96FC42BCA6D6A0007C2EE /* UIWindow+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.woody.MoMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahlua.MoMo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.woody.MoMo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahlua.MoMo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

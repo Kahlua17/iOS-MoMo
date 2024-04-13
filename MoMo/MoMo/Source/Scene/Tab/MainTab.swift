@@ -13,24 +13,24 @@ enum MainTab: Int, CaseIterable, Equatable {
 }
 
 extension MainTab {
-    var title: String {
+    var title: String? {
         switch self {
-        case .home: return "세미나"
-        case .calendar: return "마이페이지"
+        case .home: return nil
+        case .calendar: return nil
         }
     }
 
     var activeIcon: UIImage? {
         switch self {
-        case .home: return nil
-        case .calendar: return nil
+        case .home: return UIImage(systemName: "house.fill")?.withTintColor(.black)
+        case .calendar: return UIImage(systemName: "calendar")?.withTintColor(.black)
         }
     }
 
     var icon: UIImage? {
         switch self {
-        case .home: return nil
-        case .calendar: return nil
+        case .home: return UIImage(systemName: "house.fill")?.withTintColor(.black)
+        case .calendar: return UIImage(systemName: "calendar")?.withTintColor(.black)
         }
     }
 }

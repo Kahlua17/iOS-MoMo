@@ -20,11 +20,13 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController(rootViewController: EnterNicknameViewController()).then {
-            $0.navigationBar.prefersLargeTitles = true
-        }
-        self.window = window
+        window.rootViewController = RootController(
+            localStorage: LocalStorageImpl(
+                database: UserDefaults.standard
+            )
+        )
 
+        self.window = window
         window.makeKeyAndVisible()
     }
 }
