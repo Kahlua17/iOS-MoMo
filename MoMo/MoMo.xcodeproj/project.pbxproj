@@ -39,6 +39,7 @@
 		0DC96FE52BCA7A1E0007C2EE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96FE42BCA7A1E0007C2EE /* Lottie */; };
 		0DC96FEA2BCA7ADD0007C2EE /* EnterNicknameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */; };
 		0DC96FEC2BCA803C0007C2EE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */; };
+		0DC96FEE2BCA815B0007C2EE /* EditMoimDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FED2BCA815B0007C2EE /* EditMoimDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		0DC96FD42BCA79240007C2EE /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameRequest.swift; sourceTree = "<group>"; };
 		0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		0DC96FED2BCA815B0007C2EE /* EditMoimDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMoimDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				0DC96FC62BCA6FBF0007C2EE /* EditMoimViewController.swift */,
+				0DC96FED2BCA815B0007C2EE /* EditMoimDTO.swift */,
 			);
 			path = EditMoim;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				0DC96FDA2BCA79240007C2EE /* Request.swift in Sources */,
 				0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */,
 				0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */,
+				0DC96FEE2BCA815B0007C2EE /* EditMoimDTO.swift in Sources */,
 				0DC96F732BCA37E70007C2EE /* AppDelegate.swift in Sources */,
 				0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */,
 				0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */,

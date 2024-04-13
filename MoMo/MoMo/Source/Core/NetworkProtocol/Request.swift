@@ -92,5 +92,5 @@ public extension Request {
 }
 
 public extension Request {
-    var baseURL: String { "\(baseURL)" }
+    var baseURL: String { "\(Const.baseURL)" }
 }

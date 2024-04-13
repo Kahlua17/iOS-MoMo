@@ -29,8 +29,13 @@ final class EditMoimViewController: UIViewController {
         $0.font = .systemFont(ofSize: Const.titleLabelSize, weight: .medium)
     }
     
-    private let moimCalendarView = UICalendarView()
-  
+    private lazy var moimCalendarView = UICalendarView().then {
+        $0.calendar = .current
+        $0.locale = .current
+        $0.fontDesign = . rounded
+        $0.selectionBehavior = UICalendarSelectionSingleDate(delegate: self)
+    }
+
     private lazy var confirmButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("완료", for: .normal)
@@ -46,6 +51,11 @@ final class EditMoimViewController: UIViewController {
         )
         return button
     }()
+
+    private let network = Network(session: .shared)
+
+    private var moimTitle: String?
+    private var moimDateString: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +81,7 @@ final class EditMoimViewController: UIViewController {
         containerView.addSubview(titleTextField)
         containerView.addSubview(moimCalendarTitleLabel)
         containerView.addSubview(moimCalendarView)
+        containerView.addSubview(confirmButton)
 
         containerView.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(16)
@@ -91,17 +102,59 @@ final class EditMoimViewController: UIViewController {
             make.top.equalTo(moimCalendarTitleLabel.snp.bottom).offset(10)
             make.directionalHorizontalEdges.equalToSuperview()
         }
+        confirmButton.snp.makeConstraints { make in
+            make.top.equalTo(moimCalendarView.snp.bottom).offset(20)
+            make.directionalHorizontalEdges.equalToSuperview()
+            make.height.equalTo(44)
+        }
     }
 
     @objc private func didTapConfirmButton() {
-        self.dismiss(animated: true)
+        guard let moimTitle,
+              let moimDateString
+        else {
+            let alertController = UIAlertController(title: "⚠️", message: "빠진 값이 있어요", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+
+        Task {
+            let response = try await network.send(
+                EditMoimRequest(body: .init(
+                    dateTime: moimDateString,
+                    locationDesc: moimTitle
+                ))
+            )
+            self.dismiss(animated: true)
+        }
+
     }
 }
 
 extension EditMoimViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        moimTitle = textField.text
+    }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        moimTitle = textField.text
         view.endEditing(true)
         return true
+    }
+}
+
+extension EditMoimViewController: UICalendarSelectionSingleDateDelegate {
+    func dateSelection(
+        _ selection: UICalendarSelectionSingleDate,
+        didSelectDate dateComponents: DateComponents?
+    ) {
+        if let date = dateComponents?.date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "YYYY-MM-dd"
+            moimDateString = dateFormatter.string(from: date)
+            print(moimDateString)
+        }
     }
 }
 
@@ -110,3 +163,4 @@ extension EditMoimViewController {
         static let titleLabelSize: CGFloat = 16
     }
 }
+

@@ -38,19 +38,19 @@ extension RootController {
         Task {
             let userId = try await localStorage.read(forKey: .userId, type: UserId.self)
 
-            if let userId {
+//            if let userId {
                 let mainTabBarController = MainTabBarController()
                 mainTabBarController.modalPresentationStyle = .fullScreen
                 self.switchToViewController(mainTabBarController)
-            } else {
-                let enterNicknameViewController = UINavigationController(
-                    rootViewController: EnterNicknameViewController(localStorage: localStorage)
-                ).then {
-                    $0.navigationBar.prefersLargeTitles = true
-                }
-                enterNicknameViewController.modalPresentationStyle = .fullScreen
-                self.switchToViewController(enterNicknameViewController)
-            }
+//            } else {
+//                let enterNicknameViewController = UINavigationController(
+//                    rootViewController: EnterNicknameViewController(localStorage: localStorage)
+//                ).then {
+//                    $0.navigationBar.prefersLargeTitles = true
+//                }
+//                enterNicknameViewController.modalPresentationStyle = .fullScreen
+//                self.switchToViewController(enterNicknameViewController)
+//            }
         }
     }
 
