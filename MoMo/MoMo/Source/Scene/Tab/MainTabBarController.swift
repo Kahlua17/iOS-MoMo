@@ -42,6 +42,14 @@ final class MainTabBarController: UITabBarController {
         self.qrButton.do {
             $0.backgroundColor = .black
             $0.layer.cornerRadius = 24
+            $0.addAction(.init(handler: { [weak self] _ in
+                let editMoimViewController = EditMoimViewController()
+                let navigationController = UINavigationController(rootViewController: editMoimViewController).then {
+                    $0.navigationBar.prefersLargeTitles = true
+                }
+                navigationController.isModalInPresentation = true
+                self?.present(navigationController, animated: true)
+            }), for: .touchUpInside)
             $0.setImage(UIImage(systemName: "plus")?.resized(side: 24).withTintColor(.white), for: .normal)
         }
         self.tabBar.addSubview(self.qrButton)

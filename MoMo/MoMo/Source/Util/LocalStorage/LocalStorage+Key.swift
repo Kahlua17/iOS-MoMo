@@ -17,4 +17,5 @@ public struct LocalStorageKey: RawRepresentable {
 
 public extension LocalStorageKey {
     static let userId = LocalStorageKey(rawValue: "com.kahlua.MoMo.userId")
+    static let nickname = LocalStorageKey(rawValue: "com.kahlua.MoMo.nickname")
 }
