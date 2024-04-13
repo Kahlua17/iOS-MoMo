@@ -16,10 +16,10 @@
 		0DC96F992BCA513F0007C2EE /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F982BCA513F0007C2EE /* Then */; };
 		0DC96F9C2BCA51B70007C2EE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F9B2BCA51B70007C2EE /* CombineMoya */; };
 		0DC96F9E2BCA51B70007C2EE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96F9D2BCA51B70007C2EE /* Moya */; };
-		0DC96FA02BCA530B0007C2EE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96F9F2BCA530B0007C2EE /* Network.swift */; };
-		0DC96FA22BCA53880007C2EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA12BCA53880007C2EE /* Request.swift */; };
 		0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */; };
 		0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FA72BCA5CF60007C2EE /* MainTab.swift */; };
+		0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */; };
+		0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FB12BCA67610007C2EE /* UIButton+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		0DC96F7E2BCA37E80007C2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DC96F802BCA37E80007C2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC96F902BCA3F460007C2EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0DC96F9F2BCA530B0007C2EE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		0DC96FA12BCA53880007C2EE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0DC96FA72BCA5CF60007C2EE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameViewController.swift; sourceTree = "<group>"; };
+		0DC96FB12BCA67610007C2EE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,7 @@
 		0DC96F872BCA3EE00007C2EE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0DC96FB02BCA675A0007C2EE /* Util */,
 				0DC96F922BCA41410007C2EE /* App */,
 				0DC96F8A2BCA3F040007C2EE /* Network */,
 				0DC96F892BCA3EFE0007C2EE /* Scene */,
@@ -99,6 +100,7 @@
 		0DC96F892BCA3EFE0007C2EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0DC96FAD2BCA64140007C2EE /* Nickname */,
 				0DC96FA42BCA58280007C2EE /* Tab */,
 				0DC96F8F2BCA3F1E0007C2EE /* Home */,
 			);
@@ -108,9 +110,6 @@
 		0DC96F8A2BCA3F040007C2EE /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0DC96FA32BCA54680007C2EE /* Core */,
-				0DC96F9F2BCA530B0007C2EE /* Network.swift */,
-				0DC96FA12BCA53880007C2EE /* Request.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -132,13 +131,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		0DC96FA32BCA54680007C2EE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		0DC96FA42BCA58280007C2EE /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +138,22 @@
 				0DC96FA52BCA58540007C2EE /* MainTabBarController.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		0DC96FAD2BCA64140007C2EE /* Nickname */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */,
+			);
+			path = Nickname;
+			sourceTree = "<group>";
+		};
+		0DC96FB02BCA675A0007C2EE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0DC96FB12BCA67610007C2EE /* UIButton+.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,13 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC96FA02BCA530B0007C2EE /* Network.swift in Sources */,
 				0DC96F912BCA3F460007C2EE /* HomeViewController.swift in Sources */,
+				0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */,
 				0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */,
-				0DC96FA22BCA53880007C2EE /* Request.swift in Sources */,
 				0DC96F732BCA37E70007C2EE /* AppDelegate.swift in Sources */,
 				0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */,
 				0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */,
+				0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
