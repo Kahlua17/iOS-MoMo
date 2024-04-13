@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0411632BCA89980085C63B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0411622BCA89980085C63B /* CalendarViewController.swift */; };
+		0D0411662BCA8A740085C63B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0411652BCA8A740085C63B /* DetailViewController.swift */; };
+		0D0411682BCA95670085C63B /* MoimDetailCheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0411672BCA95670085C63B /* MoimDetailCheckoutCell.swift */; };
 		0DC96F732BCA37E70007C2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96F722BCA37E70007C2EE /* AppDelegate.swift */; };
 		0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96F742BCA37E70007C2EE /* SceneDelegate.swift */; };
 		0DC96F7C2BCA37E80007C2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC96F7B2BCA37E80007C2EE /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0411622BCA89980085C63B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		0D0411652BCA8A740085C63B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0D0411672BCA95670085C63B /* MoimDetailCheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoimDetailCheckoutCell.swift; sourceTree = "<group>"; };
 		0DC96F6F2BCA37E70007C2EE /* MoMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC96F722BCA37E70007C2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC96F742BCA37E70007C2EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0411612BCA898B0085C63B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0D0411622BCA89980085C63B /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0D0411642BCA8A6C0085C63B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0D0411652BCA8A740085C63B /* DetailViewController.swift */,
+				0D0411672BCA95670085C63B /* MoimDetailCheckoutCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		0DC96F662BCA37E70007C2EE = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +163,8 @@
 		0DC96F892BCA3EFE0007C2EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0D0411642BCA8A6C0085C63B /* Detail */,
+				0D0411612BCA898B0085C63B /* Calendar */,
 				0DC96FC52BCA6F9D0007C2EE /* EditMoim */,
 				0DC96FB32BCA69130007C2EE /* Root */,
 				0DC96FAD2BCA64140007C2EE /* Nickname */,
@@ -363,6 +388,8 @@
 				0DC96FB22BCA67610007C2EE /* UIButton+.swift in Sources */,
 				0DC96FC22BCA6D5F0007C2EE /* UIConstants.swift in Sources */,
 				0DC96FDA2BCA79240007C2EE /* Request.swift in Sources */,
+				0D0411632BCA89980085C63B /* CalendarViewController.swift in Sources */,
+				0D0411662BCA8A740085C63B /* DetailViewController.swift in Sources */,
 				0DC96FA62BCA58540007C2EE /* MainTabBarController.swift in Sources */,
 				0DC96FB92BCA69AC0007C2EE /* LocalStorage+Key.swift in Sources */,
 				0DC96FEE2BCA815B0007C2EE /* EditMoimDTO.swift in Sources */,
@@ -379,6 +406,7 @@
 				0DC96FDB2BCA79240007C2EE /* Response.swift in Sources */,
 				0DC96FC72BCA6FBF0007C2EE /* EditMoimViewController.swift in Sources */,
 				0DC96FC42BCA6D6A0007C2EE /* UIWindow+.swift in Sources */,
+				0D0411682BCA95670085C63B /* MoimDetailCheckoutCell.swift in Sources */,
 				0DC96FD82BCA79240007C2EE /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

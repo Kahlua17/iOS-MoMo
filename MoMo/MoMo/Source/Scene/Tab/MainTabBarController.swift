@@ -82,7 +82,7 @@ extension MainTabBarController {
                 }
             case .calendar:
                 viewController = UINavigationController(
-                    rootViewController: HomeViewController()
+                    rootViewController: CalendarViewController()
                 ).then {
                     $0.navigationBar.isHidden = true
                 }

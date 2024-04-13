@@ -143,11 +143,6 @@ final class HomeViewController: UIViewController {
             $0.leading.trailing.equalTo(contentTodayView) // contentTodayView와 같은 위치
             $0.height.equalTo(1) // 실선의 높이
         }
-        
-        
-        
-        
-        
     }
     
     @objc func navigationBarUserButtonTapped() {
@@ -156,6 +151,9 @@ final class HomeViewController: UIViewController {
     
     @objc func contentTodayButtonTapped() {
         print("오늘의 모임 버튼 탭")
+        let detailViewController = DetailViewController()
+        detailViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
 }
