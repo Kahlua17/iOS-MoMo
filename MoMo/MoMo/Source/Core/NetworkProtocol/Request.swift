@@ -70,20 +70,20 @@ public extension Request {
     var query: QueryItems {
         return [:]
     }
-    
+
     var header: HTTPHeader {
-        return ["Authorization": "Bearer" + " " + token]
+        return ["User-ID": "\(userId)"]
     }
     
     var contentType: String {
         return "application/json"
     }
     
-    private var token: String {
-        guard let token = UserDefaults.standard.string(forKey: "token") else {
-            return ""
-        }
-        return token
+    private var userId: String {
+        guard let userId = UserDefaults.standard.string(
+            forKey: LocalStorageKey.userId.rawValue
+        ) else { return "" }
+        return userId
     }
     
     var body: Body? {
@@ -92,5 +92,5 @@ public extension Request {
 }
 
 public extension Request {
-    var baseURL: String { "http://marrytingserver-env-2.eba-qvmbsp3m.ap-northeast-2.elasticbeanstalk.com" }
+    var baseURL: String { "\(baseURL)" }
 }

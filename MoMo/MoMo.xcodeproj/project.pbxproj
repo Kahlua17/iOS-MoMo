@@ -37,6 +37,8 @@
 		0DC96FDD2BCA79240007C2EE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */; };
 		0DC96FDE2BCA79240007C2EE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FD42BCA79240007C2EE /* Network.swift */; };
 		0DC96FE52BCA7A1E0007C2EE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DC96FE42BCA7A1E0007C2EE /* Lottie */; };
+		0DC96FEA2BCA7ADD0007C2EE /* EnterNicknameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */; };
+		0DC96FEC2BCA803C0007C2EE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		0DC96FD12BCA79240007C2EE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		0DC96FD42BCA79240007C2EE /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNicknameRequest.swift; sourceTree = "<group>"; };
+		0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,6 @@
 			children = (
 				0DC96F922BCA41410007C2EE /* App */,
 				0DC96F8A2BCA3F040007C2EE /* Core */,
-				0DC96FE62BCA7A5B0007C2EE /* DataSource */,
 				0DC96F892BCA3EFE0007C2EE /* Scene */,
 				0DC96FB02BCA675A0007C2EE /* Util */,
 			);
@@ -183,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0DC96FAE2BCA64210007C2EE /* EnterNicknameViewController.swift */,
+				0DC96FE92BCA7ADD0007C2EE /* EnterNicknameRequest.swift */,
 			);
 			path = Nickname;
 			sourceTree = "<group>";
@@ -240,6 +244,7 @@
 				0DC96FD12BCA79240007C2EE /* loading.json */,
 				0DC96FD32BCA79240007C2EE /* LoadingIndicator.swift */,
 				0DC96FD42BCA79240007C2EE /* Network.swift */,
+				0DC96FEB2BCA803C0007C2EE /* BaseURL.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -261,13 +266,6 @@
 				0DC96FBD2BCA6A8E0007C2EE /* String+.swift */,
 			);
 			path = "Foundation+";
-			sourceTree = "<group>";
-		};
-		0DC96FE62BCA7A5B0007C2EE /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC96FEA2BCA7ADD0007C2EE /* EnterNicknameRequest.swift in Sources */,
 				0DC96FDD2BCA79240007C2EE /* LoadingIndicator.swift in Sources */,
 				0DC96F912BCA3F460007C2EE /* HomeViewController.swift in Sources */,
 				0DC96FDE2BCA79240007C2EE /* Network.swift in Sources */,
@@ -367,6 +366,7 @@
 				0DC96FB72BCA698A0007C2EE /* UserDefaults+Database.swift in Sources */,
 				0DC96F752BCA37E70007C2EE /* SceneDelegate.swift in Sources */,
 				0DC96FA82BCA5CF60007C2EE /* MainTab.swift in Sources */,
+				0DC96FEC2BCA803C0007C2EE /* BaseURL.swift in Sources */,
 				0DC96FD92BCA79240007C2EE /* NetworkProtocol.swift in Sources */,
 				0DC96FC02BCA6C140007C2EE /* UIImage+.swift in Sources */,
 				0DC96FAF2BCA64210007C2EE /* EnterNicknameViewController.swift in Sources */,

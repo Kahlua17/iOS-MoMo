@@ -35,6 +35,7 @@ final class EnterNicknameViewController: UIViewController {
         return button
     }()
 
+    private let network = Network(session: .shared)
     private let localStorage: any LocalStorage
 
     init(localStorage: any LocalStorage) {
@@ -74,12 +75,14 @@ final class EnterNicknameViewController: UIViewController {
             return
         }
 
-        // 입력된 닉네임을 다음 화면이나 다음 동작으로 전달하는 코드를 여기에 작성할 수 있습니다.
-        // 예: 다음 뷰 컨트롤러로 닉네임을 전달하거나, 사용자 정보에 저장하는 등의 동작을 수행할 수 있습니다.
         print("입력된 닉네임: \(nickname)")
-        Task {
-            try await localStorage.write(nickname, forKey: .nickname)
 
+        Task {
+            let response = try await network.send(EnterNicknameRequest(body: .init(nickname: nickname)))
+            
+            try await localStorage.write(nickname, forKey: .nickname)
+            try await localStorage.write(response.userId, forKey: .userId)
+            
             let mainTabBarController = MainTabBarController()
             mainTabBarController.modalPresentationStyle = .fullScreen
             self.present(mainTabBarController, animated: false)
